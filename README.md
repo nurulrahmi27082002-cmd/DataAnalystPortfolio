@@ -1,41 +1,44 @@
-# Data Analyst Portfolio — GitHub Pages
+# Analytics Studio — Data Analyst Portfolio V2
 
-Portfolio HTML/CSS/JavaScript tanpa framework atau build step. Responsif dan dapat diedit langsung di GitHub.
+Website portfolio statis yang bisa diedit langsung di GitHub dan dihosting gratis melalui GitHub Pages.
 
-## Mulai
-1. Buat repository publik GitHub bernama `data-analyst-portfolio`.
-2. Upload semua isi folder ini ke root repository (bukan folder ZIP-nya).
-3. Buka `assets/config.js` melalui GitHub → ikon pensil **Edit**. Ganti nama, email, GitHub, LinkedIn, judul/deskripsi proyek.
-4. Buka **Settings → Pages → Build and deployment → Deploy from a branch**. Pilih `main` dan `/ (root)` lalu Save.
-5. Situs biasanya muncul di `https://USERNAME.github.io/data-analyst-portfolio/` setelah deployment berhasil.
-6. Untuk mengubah warna/tipografi/layout, edit `assets/style.css`. Untuk studi kasus, edit `projects/*.html`.
+## Mengganti website lama
+1. Buka repository GitHub kamu.
+2. Upload **isi folder** portfolio-v2 (bukan folder pembungkusnya) ke root repository. Pilih overwrite/replace jika diminta.
+3. Pastikan `index.html`, `assets/`, dan `projects/` berada langsung di root repository.
+4. Commit changes. Jika GitHub Pages sudah aktif (main / root), tunggu deployment dan refresh website dengan Ctrl+F5.
+5. Hapus file lama yang tidak terpakai hanya setelah memastikan tidak digunakan.
 
-## Palet
-- `#09474b` — primary (target 50%)
-- `#467e82` — secondary (15%)
-- `#d4d5c5` — sage (20%)
-- `#ffffff` — white (15%)
+## Edit identitas
+- `assets/config.js`: nama, email, GitHub, LinkedIn.
+- `index.html`: headline, bio, deskripsi proyek, judul, teks dan visual demo.
+- `assets/style.css`: warna, spacing, layout, animasi.
+- `projects/sales.html`, `customer.html`, `hr.html`: detail case study.
+- `projects/project.css`: tampilan halaman studi kasus.
 
-Proporsi adalah panduan desain, bukan ukuran piksel eksak.
-
-## Struktur
-- `index.html`: halaman utama
-- `assets/config.js`: teks & tautan profil/proyek
-- `assets/app.js`: render project cards
-- `assets/style.css`: tampilan & responsive design
-- `projects/`: tiga halaman studi kasus
-- `deliverables/{sales,customer,hr}/`: tempat berkas Excel, Python, SQL, Power BI, Word, PowerPoint
-
-## Format file yang disarankan untuk setiap proyek
-- `01_data_cleaning.xlsx`
-- `02_analysis.ipynb`
-- `03_queries.sql`
-- `04_dashboard.pbix`
-- `05_analysis_report.docx`
-- `06_stakeholder_presentation.pptx`
-- `07_dashboard_preview.png`
-
-Tambahkan tautan ke file dari halaman proyek. File Power BI `.pbix` harus dibuka dengan Power BI Desktop; untuk dashboard web gunakan tautan publik yang aman dan tidak memuat data sensitif.
+## Warna
+- Deep teal `#09474b` (dominan)
+- Muted teal `#467e82`
+- Sage `#d4d5c5`
+- White `#ffffff`
+- Aksen mint `#b2f4d4` hanya untuk kontras.
 
 ## Penting
-Ini adalah **template/blueprint**, bukan tiga proyek analisis yang telah selesai. Jangan menampilkan insight, angka, atau hasil yang belum benar-benar dihitung. Pastikan dataset publik diizinkan untuk digunakan dan hindari mengunggah data rahasia. Tautan CV `assets/CV.pdf` akan berfungsi setelah Anda menambahkan file tersebut. Ganti tautan kontak placeholder sebelum dipublikasikan.
+Grafik dan KPI pada halaman utama adalah **ilustrasi**, bukan hasil analisis nyata. Jangan mengklaim angka tersebut sebagai hasil proyek. Isi halaman studi kasus setelah analisis nyata selesai. Ganti `emailkamu@example.com` dan URL LinkedIn.
+
+## Struktur
+```
+index.html
+README.md
+assets/
+  config.js
+  script.js
+  style.css
+projects/
+  project.css
+  sales.html
+  customer.html
+  hr.html
+```
+
+Tanpa build tools, framework, atau API key. Font Google opsional (fallback tersedia).
