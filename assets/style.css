@@ -50,3 +50,52 @@ body{background:#ffffff;-webkit-font-smoothing:antialiased;text-rendering:optimi
 .case-links a{box-shadow:0 7px 17px rgba(9,71,75,.2);transition:box-shadow .2s,transform .2s}
 .case-links a:hover{box-shadow:0 12px 25px rgba(9,71,75,.3);transform:translateY(-2px)}
 @media(prefers-reduced-motion:reduce){.project-card:hover,.btn:hover,.nav-contact:hover,.case-links a:hover{transform:none}}
+
+
+
+/* FIX CONTRAST — THE PROCESS & ABOUT */
+
+.process {
+  background: #d4d5c5;
+  color: #09474b;
+}
+.process .section-label,
+.process h2,
+.process h2 em,
+.process .steps h3 {
+  color: #09474b;
+}
+.process .steps p {
+  color: #244c4e;
+}
+.process .steps span {
+  color: #285e61;
+}
+.process .steps > div {
+  border-top-color: rgba(9,71,75,.48);
+}
+
+/* ABOUT & CONTACT */
+.about {
+  background: #467e82;
+  color: #ffffff;
+}
+.about .section-label,
+.about h2,
+.about h2 em,
+.about-grid p,
+.about .social a {
+  color: #ffffff;
+}
+.about .social a:hover {
+  color: #d4d5c5;
+}
+.about .btn.light {
+  background: #d4d5c5;
+  color: #09474b;
+  box-shadow: 0 8px 22px rgba(9,71,75,.24);
+}
+.about .btn.light:hover {
+  box-shadow: 0 13px 28px rgba(9,71,75,.34),
+              0 0 17px rgba(212,213,197,.28);
+}
