@@ -170,3 +170,72 @@ body{background:#ffffff;-webkit-font-smoothing:antialiased;text-rendering:optimi
     0 16px 36px rgba(0,0,0,.3),
     0 0 30px rgba(212,213,197,.38);
 }
+
+
+/* FIX MY TOOLKIT — KEEP ORIGINAL GRID DESIGN */
+
+/* Semua kartu, baik div maupun link */
+.tool-grid > a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Samakan desain link dengan kartu asli */
+.tool-grid > a {
+  background: #ffffff;
+  border: 1px solid rgba(9, 71, 75, 0.18);
+  border-radius: 13px;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(9, 71, 75, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Label */
+.tool-grid > a span {
+  display: block;
+  color: #467e82;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 26px;
+}
+
+/* Nama tools */
+.tool-grid > a strong {
+  display: block;
+  color: #09474b;
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+
+/* Deskripsi */
+.tool-grid > a p {
+  color: #467e82;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Shadow dan glow saat hover */
+.tool-grid > a:hover {
+  transform: translateY(-5px);
+  border-color: #467e82;
+  box-shadow:
+    0 15px 35px rgba(9, 71, 75, 0.18),
+    0 0 22px rgba(70, 126, 130, 0.20);
+}
+
+/* Aksesibilitas keyboard */
+.tool-grid > a:focus-visible {
+  outline: 3px solid #467e82;
+  outline-offset: 3px;
+}
+
+
+
+
