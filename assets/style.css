@@ -236,6 +236,31 @@ body{background:#ffffff;-webkit-font-smoothing:antialiased;text-rendering:optimi
   outline-offset: 3px;
 }
 
+/* PROFILE PHOTO — ABOUT SECTION */
+.profile-photo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 3px solid #467e82;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.20),
+    0 0 22px rgba(70, 126, 130, 0.40);
+  margin: 24px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.25),
+    0 0 30px rgba(70, 126, 130, 0.55);
+}
+
+
+
 
 
 
